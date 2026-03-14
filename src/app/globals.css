@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #09090b;
+  --color-card: #18181b;
+  --color-border: #27272a;
+  --color-muted: #a1a1aa;
+  --color-accent: #3b82f6;
+  --color-accent-2: #8b5cf6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #fafafa;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+pre code {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}

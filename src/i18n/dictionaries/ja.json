@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Euro Option Pricer",
+    "description": "実務用ヨーロピアンオプション価格計算エンジン（C++ & Rust）"
+  },
+  "nav": {
+    "home": "ホーム",
+    "docs": "ドキュメント",
+    "github": "GitHub"
+  },
+  "hero": {
+    "badge": "オープンソース",
+    "title": "ヨーロピアンオプション価格計算エンジン",
+    "subtitle": "Black-Scholes-Mertonモデルによる実務用プライシングと全Greeksの算出。C++とRustで最高のパフォーマンスを実現。",
+    "cta_docs": "使い方を見る",
+    "cta_github": "GitHubで見る"
+  },
+  "features": {
+    "title": "実務トレーディング向け設計",
+    "subtitle": "リアルタイムオプションプライシングとデルタヘッジに必要な全てを備えています。",
+    "greeks_title": "10種のGreeks",
+    "greeks_desc": "Delta, Gamma, Theta, Vega, Rho, 配当Rho, Vanna, Vomma, Charm。全て1回の計算で算出。",
+    "methods_title": "3つの計算手法",
+    "methods_desc": "解析解（閉形式）、数値微分（中心差分法）、自動微分（逆伝播方式、Rustのみ）。",
+    "perf_title": "毎秒約3,700万Greeks",
+    "perf_desc": "キャッシュライン整合構造体、ホットパスでのゼロアロケーション、-O3最適化とネイティブSIMDベクトル化。",
+    "market_title": "マーケットデータ抽象化",
+    "market_desc": "スナップショットベースの一貫性を持つ切替可能なデータソース。静的、マルチティッカー、カスタムフィード対応。",
+    "validated_title": "数学的に検証済み",
+    "validated_desc": "プット・コール・パリティ（精度1e-14）、Hull教科書の値、デルタ範囲チェック、3手法のクロス検証。",
+    "safe_title": "本番環境対応",
+    "safe_desc": "完全な入力バリデーション、NaN/Inf拒否、満期近傍のエッジケース処理。未定義動作なし。"
+  },
+  "comparison": {
+    "title": "エンジンを選択",
+    "subtitle": "同じ数学的精度。2つの最適化された実装。",
+    "feature": "機能",
+    "cpp": "C++",
+    "rust": "Rust",
+    "rows": {
+      "pricing": "BS価格計算",
+      "analytical": "解析Greeks",
+      "numerical": "数値Greeks（FD）",
+      "autodiff": "自動微分Greeks",
+      "market_data": "マーケットデータ抽象化",
+      "validation": "入力バリデーション",
+      "perf_price": "価格計算速度",
+      "perf_greeks": "Greeks計算速度",
+      "norm_cdf": "正規分布CDF"
+    },
+    "values": {
+      "cpp_pricing": "閉形式BSM",
+      "rust_pricing": "閉形式BSM",
+      "cpp_analytical": "全10種のGreeks",
+      "rust_analytical": "全10種のGreeks",
+      "cpp_numerical": "中心差分法",
+      "rust_numerical": "中心差分法",
+      "cpp_autodiff": "-",
+      "rust_autodiff": "逆伝播ADテープ",
+      "cpp_market": "仮想クラス + スナップショット",
+      "rust_market": "トレイト + スナップショット",
+      "cpp_validation": "std::invalid_argument",
+      "rust_validation": "Result<T, ValidationError>",
+      "cpp_perf_price": "約2,700万/秒",
+      "rust_perf_price": "約4,100万/秒",
+      "cpp_perf_greeks": "約3,700万/秒",
+      "rust_perf_greeks": "約3,600万/秒",
+      "cpp_norm_cdf": "std::erfc（15桁精度）",
+      "rust_norm_cdf": "libm::erfc（15桁精度）"
+    }
+  },
+  "quickstart": {
+    "title": "クイックスタート",
+    "subtitle": "5行以内でプライシングを開始できます。"
+  },
+  "cta": {
+    "title": "始めましょう",
+    "subtitle": "お好みの言語のドキュメントをお読みください。",
+    "cpp_docs": "C++ ドキュメント",
+    "rust_docs": "Rust ドキュメント"
+  },
+  "footer": {
+    "built_with": "Next.jsで構築、Cloudflare Workersでデプロイ。",
+    "source": "ソースコードはGitHubで公開中。"
+  },
+  "docs": {
+    "sidebar": {
+      "overview": "概要",
+      "cpp": "C++ エンジン",
+      "rust": "Rust エンジン"
+    },
+    "overview": {
+      "title": "ドキュメント",
+      "intro": "Euro Option PricerはBlack-Scholes-Mertonモデルを使用した実務用ヨーロピアンオプション価格計算を提供します。以下からエンジンを選択してください。",
+      "choose": "エンジンを選択して始めましょう："
+    },
+    "cpp": {
+      "title": "C++ エンジン",
+      "getting_started": "はじめに",
+      "prerequisites": "前提条件",
+      "build": "ビルド",
+      "api_reference": "APIリファレンス",
+      "types": "型定義",
+      "pricing": "価格計算関数",
+      "numerical": "数値Greeks",
+      "market_data": "マーケットデータ",
+      "examples": "使用例"
+    },
+    "rust": {
+      "title": "Rust エンジン",
+      "getting_started": "はじめに",
+      "prerequisites": "前提条件",
+      "add_dep": "Cargo.tomlに追加",
+      "api_reference": "APIリファレンス",
+      "types": "型定義",
+      "pricing": "価格計算関数",
+      "numerical": "数値Greeks",
+      "autodiff": "自動微分Greeks",
+      "market_data": "マーケットデータ",
+      "examples": "使用例"
+    }
+  }
+}

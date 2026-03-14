@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Euro Option Pricer",
+    "description": "Production-grade European option pricing engine in C++ and Rust"
+  },
+  "nav": {
+    "home": "Home",
+    "docs": "Docs",
+    "github": "GitHub"
+  },
+  "hero": {
+    "badge": "Open Source",
+    "title": "European Option Pricing Engine",
+    "subtitle": "Production-grade Black-Scholes-Merton pricing with full Greeks. Built in C++ and Rust for maximum performance.",
+    "cta_docs": "Get Started",
+    "cta_github": "View on GitHub"
+  },
+  "features": {
+    "title": "Built for Production Trading",
+    "subtitle": "Everything you need for real-time option pricing and delta hedging.",
+    "greeks_title": "10 Greeks",
+    "greeks_desc": "Delta, Gamma, Theta, Vega, Rho, Dividend Rho, Vanna, Vomma, and Charm. All computed in a single pass.",
+    "methods_title": "3 Computation Methods",
+    "methods_desc": "Analytical closed-form, numerical finite differences, and reverse-mode automatic differentiation (Rust).",
+    "perf_title": "~37M Greeks/sec",
+    "perf_desc": "Cache-aligned structs, zero allocation in hot paths, and -O3 with native SIMD vectorization.",
+    "market_title": "Market Data Abstraction",
+    "market_desc": "Switchable data sources with snapshot-based consistency. Static, multi-ticker, or bring your own feed.",
+    "validated_title": "Mathematically Validated",
+    "validated_desc": "Put-call parity (1e-14), Hull textbook values, delta bounds, and 3-way cross-method verification.",
+    "safe_title": "Production Safe",
+    "safe_desc": "Full input validation, NaN/Inf rejection, near-expiry edge cases handled. No undefined behavior."
+  },
+  "comparison": {
+    "title": "Choose Your Engine",
+    "subtitle": "Same mathematical precision. Two optimized implementations.",
+    "feature": "Feature",
+    "cpp": "C++",
+    "rust": "Rust",
+    "rows": {
+      "pricing": "BS Pricing",
+      "analytical": "Analytical Greeks",
+      "numerical": "Numerical Greeks (FD)",
+      "autodiff": "Autodiff Greeks",
+      "market_data": "Market Data Abstraction",
+      "validation": "Input Validation",
+      "perf_price": "Pricing Speed",
+      "perf_greeks": "Greeks Speed",
+      "norm_cdf": "Normal CDF"
+    },
+    "values": {
+      "cpp_pricing": "Closed-form BSM",
+      "rust_pricing": "Closed-form BSM",
+      "cpp_analytical": "All 10 Greeks",
+      "rust_analytical": "All 10 Greeks",
+      "cpp_numerical": "Central FD",
+      "rust_numerical": "Central FD",
+      "cpp_autodiff": "-",
+      "rust_autodiff": "Reverse-mode AD tape",
+      "cpp_market": "Virtual class + Snapshot",
+      "rust_market": "Trait + Snapshot",
+      "cpp_validation": "std::invalid_argument",
+      "rust_validation": "Result<T, ValidationError>",
+      "cpp_perf_price": "~27M/sec",
+      "rust_perf_price": "~41M/sec",
+      "cpp_perf_greeks": "~37M/sec",
+      "rust_perf_greeks": "~36M/sec",
+      "cpp_norm_cdf": "std::erfc (15 digits)",
+      "rust_norm_cdf": "libm::erfc (15 digits)"
+    }
+  },
+  "quickstart": {
+    "title": "Quick Start",
+    "subtitle": "Get pricing in under 5 lines of code."
+  },
+  "cta": {
+    "title": "Ready to Start?",
+    "subtitle": "Read the documentation for your preferred language.",
+    "cpp_docs": "C++ Documentation",
+    "rust_docs": "Rust Documentation"
+  },
+  "footer": {
+    "built_with": "Built with Next.js and deployed on Cloudflare Workers.",
+    "source": "Source code on GitHub."
+  },
+  "docs": {
+    "sidebar": {
+      "overview": "Overview",
+      "cpp": "C++ Engine",
+      "rust": "Rust Engine"
+    },
+    "overview": {
+      "title": "Documentation",
+      "intro": "The Euro Option Pricer provides production-grade European option pricing using the Black-Scholes-Merton model. Choose your engine below.",
+      "choose": "Choose an engine to get started:"
+    },
+    "cpp": {
+      "title": "C++ Engine",
+      "getting_started": "Getting Started",
+      "prerequisites": "Prerequisites",
+      "build": "Build",
+      "api_reference": "API Reference",
+      "types": "Types",
+      "pricing": "Pricing Functions",
+      "numerical": "Numerical Greeks",
+      "market_data": "Market Data",
+      "examples": "Examples"
+    },
+    "rust": {
+      "title": "Rust Engine",
+      "getting_started": "Getting Started",
+      "prerequisites": "Prerequisites",
+      "add_dep": "Add to Cargo.toml",
+      "api_reference": "API Reference",
+      "types": "Types",
+      "pricing": "Pricing Functions",
+      "numerical": "Numerical Greeks",
+      "autodiff": "Autodiff Greeks",
+      "market_data": "Market Data",
+      "examples": "Examples"
+    }
+  }
+}
